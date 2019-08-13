@@ -12,7 +12,7 @@
 // (Hint: use the air_temperature property.)
 
 //Setup modules that will be used
-module tape
+module tape;
 module residential; //Involving a house
 
 //Setup clock
