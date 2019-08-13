@@ -4,13 +4,15 @@
 // from Problem 2. 
 // 
 // (a) What is happening during the first few hours of the simulation? 
-// 
+//		The first few hours of the simulation, the house is heating up to get to the 
+//		setpoint. What if it's there is no set point? 
 // (b) Suggest an approach to minimizing the effect of this behavior? 
+// 		Provide it an initial value to start recording.
 //
 // (Hint: use the air_temperature property.)
 
 //Setup modules that will be used
-module tape;
+module tape
 module residential; //Involving a house
 
 //Setup clock
@@ -27,6 +29,7 @@ clock {
 
 object house{
 	name house1;
+	air_temperature 70; //changes initital temperature to 70
 	object tape.recorder {
 		property air_temperature; 
 		file "Problem4.csv";
